@@ -2,12 +2,12 @@ pipeline {
    agent any
    stages {
       stage('Build') {
-          timestamps {
-             steps {
+         steps {
+            timestamps {
                 sh 'export'
                 sh './gradlew'
-             }
-          }
+            }
+         }
       }
    }
 }
